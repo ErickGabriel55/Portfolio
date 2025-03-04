@@ -34,6 +34,19 @@
     list-style: none;
     gap: 2em;
   }
+
+  ul a{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: transform 300ms ease, color 300ms ease;
+  }
+
+  ul a:hover {
+    color: #c0b5b5;
+    cursor: pointer;
+    transition: color 300ms ease; 
+  }
+
 /* Fim do cabeçalho*/
 
 /* Inicio do sobre */
@@ -72,6 +85,14 @@
   display: block;
   margin: 35px auto;
   box-shadow: 0px 5px 10px #000000;
+  transform: scale(1); /* Estado inicial */
+  transition: transform 350ms ease;
+}
+
+.resumo-sobre-mim img:hover {
+  transform: translateY(-7px); /* Move 5px para cima */
+  transition: 350ms linear; /* Aumenta 10% */
+  box-shadow: 0px 6px 11px #000000;
 }
 
 .resumo-sobre-mim p{
@@ -90,6 +111,13 @@
 .redes-sociais-logo img {
   width: 40px;
   height: auto;
+  transform: translate(1);
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.redes-sociais-logo img:hover{
+  transform: translateY(-5px);
+  transition: 300ms linear;
 }
 
 /*inicio dos cards*/
@@ -107,14 +135,24 @@
 
 .card{
   margin: 22px;
-  background-color: #1D3557;
+  background-color: #ffffff;
   width: 290px;
   min-height: 370px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
-  color: #ffffff;
+  color: #2E2E2E;
+  transform: scale(1); /* Estado inicial */
+  transition: transform 300ms ease, box-shadow 300ms ease;
   
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 300ms linear;
+  box-shadow: 0 8px 12px #000000;
+  background-color: #f3f3f3;
+  cursor: pointer;
 }
 
 .card>h3{
