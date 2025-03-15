@@ -44,7 +44,7 @@
   }
 
   ul a:hover {
-    color: #64FFDA;
+    color: #00ffc3;
     cursor: pointer;
     transition: color 300ms ease; 
   }
@@ -52,8 +52,8 @@
 /* Fim da navegação*/
 /* Fim do cabeçalho*/
 
-/* Inicio do sobre */
 
+/*Início da configuração padrão da section*/
 section {
   padding-bottom: 4.5rem;
   padding-top: 4.5rem;
@@ -68,7 +68,9 @@ section h2 {
 hr {
   margin: 0; /* zera margens padrão */
 }
+/*Fim da configuração padrão da section*/
 
+/* Inicio do sobre */
 .Sobre{
   display: flex;
   flex-direction: column;
@@ -208,6 +210,7 @@ hr {
   gap: 2em;
   justify-content: center;
   flex-direction: row;
+  /*cursor: pointer;*/
 }
 .habilidades img{
   width: 40px;
