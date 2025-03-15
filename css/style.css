@@ -19,6 +19,8 @@
   
   /* Inicio do cabeçalho */
   header {
+    /*position: fixed;
+    top: 0;*/
     background-color: #1D3557;
     color: #FFFFFF;
     display: flex;
@@ -42,36 +44,48 @@
   }
 
   ul a:hover {
-    color: #c0b5b5;
+    color: #64FFDA;
     cursor: pointer;
     transition: color 300ms ease; 
   }
 
+/* Fim da navegação*/
 /* Fim do cabeçalho*/
 
 /* Inicio do sobre */
+
+section {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem; /* espaçamento vertical igual para todas */
+}
+
+section h2 {
+  margin-bottom: 2rem; /* espaço entre o título e o conteúdo */
+}
+
+hr {
+  margin: 0; /* zera margens padrão */
+}
+
 .Sobre{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 8rem;
-  padding-top: 2.5rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  
   /*background-color: #e0dfdf;*/
 }
 
 
 .Sobre h2{
-  margin-bottom: 0.6em;
   font-size: 2em;
-  
 }
 
 .resumo-sobre-mim {
-  max-width: 900px; /* Define um limite para o conteúdo */
+  max-width: 900px;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -85,13 +99,13 @@
   display: block;
   margin: 35px auto;
   box-shadow: 0px 5px 10px #000000;
-  transform: scale(1); /* Estado inicial */
+  transform: scale(1); 
   transition: transform 350ms ease;
 }
 
 .resumo-sobre-mim img:hover {
-  transform: translateY(-7px); /* Move 5px para cima */
-  transition: 350ms linear; /* Aumenta 10% */
+  transform: scale(1.05); 
+  transition: 350ms linear; 
   box-shadow: 0px 6px 11px #000000;
 }
 
@@ -120,14 +134,16 @@
   transition: 300ms linear;
 }
 
+/*Fim do Sobre mim*/
+
 /*inicio dos cards*/
 .projetoh2{
   text-align: center;
-  margin-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 5.5em;
+  margin-bottom: 0.9375em;
 }
 
+/*Início dos cards*/
 .card-principal{
   display: flex;
   justify-content: center;
@@ -178,4 +194,29 @@
   padding: 14px 2px;
   border-radius: 15px
   
+}
+
+/*Fim dos cards*/
+
+/*Início das habilidades*/
+.titulo-habilidades h2{
+  text-align: center;
+}
+
+.habilidades{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-direction: row;
+}
+.habilidades img{
+  width: 40px;
+  height: auto;
+  transform: translate(1);
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.habilidades img:hover{
+  transform: translateY(-5px);
+  transition: 300ms linear;
 }
