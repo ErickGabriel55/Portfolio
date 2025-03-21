@@ -151,6 +151,10 @@ hr {
   justify-content: center;
 }
 
+.card-principal a{
+  text-decoration: none;
+}
+
 .card{
   margin: 22px;
   background-color: #ffffff;
@@ -222,4 +226,34 @@ hr {
 .habilidades img:hover{
   transform: translateY(-5px);
   transition: 300ms linear;
+}
+
+.conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.entre-em-contato label{
+  font-weight: 501;
+}
+
+.entre-em-contato input{
+  width: 100%;
+  padding: 8px 0px;
+  margin: 10px 0px;
+}
+
+.entre-em-contato input[type=text]{
+  height: 100px;
+}
+
+.entre-em-contato button{
+  cursor: pointer;
+  background-color: #4682B4;
+  color: #2E2E2E;
+  border: none;
+  width: 100px;
+  height: 30px;
+
 }
