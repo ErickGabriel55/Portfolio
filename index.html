@@ -9,9 +9,14 @@
 <body>
     <!--Inicio do cabeçalho-->
     <header>
-        <span>Erick Gabriel</span>
+        <span>
+            <a href="index.html">Erick Gabriel</a>
+        </span>
         <nav>
             <ul>
+                <a href="index.html">
+                    <li>Página inicial</li>
+                </a>
                 <a href="#Sobre">
                     <li>Sobre</li>
                 </a>
@@ -21,7 +26,7 @@
                 <a href="#Habilidades">
                     <li>Habilidades</li>
                 </a>
-                <a href="#">
+                <a href="#entre-em-contato">
                     <li>Entre em contato</li>
                 </a>
             </ul>
@@ -112,16 +117,17 @@
         <section>
 
             <div class="conteiner">
-                <form action="https://formsubmit.co/erick.gabriel.professional@gmail.com" method="POST" class="entre-em-contato">
+                <form action="https://formsubmit.co/erick.gabriel.professional@gmail.com" method="POST" class="entre-em-contato" id="entre-em-contato">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
 
                     <label for="message">Mensagem</label>
                     <input type="text" name="message" id="email" required>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
                     <button type="submit">Send</button>
                 </form>
             </div>
-
+            <!--Ver como estilizar melhor um formulário (rafaella ballerini)-->
         </section>
 
         <!--Fim do send a message-->

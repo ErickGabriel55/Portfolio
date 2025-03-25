@@ -37,13 +37,13 @@
     gap: 2em;
   }
 
-  ul a{
+  header span a, ul a{
     color: #FFFFFF;
     text-decoration: none;
     transition: transform 300ms ease, color 300ms ease;
   }
 
-  ul a:hover {
+  header span a:hover, ul a:hover {
     color: #00ffc3;
     cursor: pointer;
     transition: color 300ms ease; 
@@ -232,7 +232,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 .entre-em-contato label{
   font-weight: 501;
@@ -249,11 +249,20 @@ hr {
 }
 
 .entre-em-contato button{
-  cursor: pointer;
+  /*cursor: pointer;*/
+  font-weight: 600;
   background-color: #4682B4;
-  color: #2E2E2E;
+  color: #ffffff;
   border: none;
   width: 100px;
   height: 30px;
 
+}
+
+.entre-em-contato button:hover{
+  background-color: #6ebeff;
+  color: #2E2E2E;
+  cursor: pointer;
+  transition: color 300ms ease; 
+  transition: background-color 300ms ease; 
 }
