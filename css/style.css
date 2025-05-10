@@ -19,8 +19,9 @@
   
   /* Inicio do cabeçalho */
   header {
-    /*position: fixed;
-    top: 0;*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: #1D3557;
     color: #FFFFFF;
     display: flex;
@@ -72,6 +73,8 @@ hr {
 
 /* Inicio do sobre */
 .Sobre{
+  position: static;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,6 +97,7 @@ hr {
 }
 
 .resumo-sobre-mim img{
+ 
   width: 325px;
   height: 325px;
   border-radius: 50%;
@@ -123,6 +127,7 @@ hr {
   justify-content: center;
   flex-direction: row;
   
+  
 }
 .redes-sociais-logo img {
   width: 40px;
@@ -147,6 +152,8 @@ hr {
 
 /*Início dos cards*/
 .card-principal{
+  position: relative;
+  z-index: 0;
   display: flex;
   justify-content: center;
 }
@@ -173,7 +180,7 @@ hr {
   transform: scale(1.1);
   transition: 300ms linear;
   box-shadow: 0 8px 12px #000000;
-  background-color: #f3f3f3;
+  /*background-color: #f3f3f3;*/
   cursor: pointer;
 }
 
@@ -227,8 +234,12 @@ hr {
   transform: translateY(-5px);
   transition: 300ms linear;
 }
+/*Fim das habilidades*/
 
+/**Início do formulario send a message*/
 .conteiner{
+  position: relative;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,33 +247,84 @@ hr {
 }
 .entre-em-contato label{
   font-weight: 501;
+  
 }
 
 .entre-em-contato input{
   width: 100%;
   padding: 8px 0px;
   margin: 10px 0px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.entre-em-contato input[type=text]{
-  height: 100px;
+.entre-em-contato input[type=email]{
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border: 1px solid #ededed;
+}
+
+.entre-em-contato textarea{
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin-top: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1em;
+  border: 1px solid #ededed;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .entre-em-contato button{
   /*cursor: pointer;*/
-  font-weight: 600;
-  background-color: #4682B4;
+  font-weight: bold;
+  background-color: #1D3557;
   color: #ffffff;
   border: none;
+  border-radius: 8px;
+  
+  cursor: pointer;
   width: 100px;
   height: 30px;
-
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 300ms ease;
 }
 
 .entre-em-contato button:hover{
-  background-color: #6ebeff;
-  color: #2E2E2E;
+  background-color: #00ffc3;
+  color: #1D3557;
   cursor: pointer;
   transition: color 300ms ease; 
   transition: background-color 300ms ease; 
+}
+
+/*Início do footer
+footer{
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}*/
+
+.rodape{
+  color: white;
+  background-color: #1D3557;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.rodape p{
+  font-size: 0.8rem;
+}
+
+.rodape a{
+  cursor: pointer;
+  color: #FFFFFF;
 }

@@ -40,7 +40,7 @@
             <div class="resumo-sobre-mim" id="Sobre">
                 <h2>Olá, me chamo Erick!</h2>
                 <img src="images/perfil/Erick.jpeg" alt="Foto da pessoa dona do portfólio">
-                <p>Oi! Eu sou Erick Gabriel, um estudante de Análise de Sistemas de Sergipe, com experiência como assistente administrativo e uma paixão pelo desenvolvimento de software backend. Estou sempre disposto a aprender e explorar novas tecnologias, especialmente na área de programação. Estou empolgado para continuar crescendo na tecnologia e explorar ainda mais o que ela tem a oferecer.<br> <br>Quando não estou estudando ou programando, gosto de assistir vídeos, jogar, ler e ir a lugares tranquilos!</p>
+                <p>Oi! Eu sou Erick Gabriel. Concluí o ensino médio na Escola Estadual Prof. Gonçalo Rollemberg Leite e, atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Uniasselvi, dedicado ao desenvolvimento de software backend. Estou sempre disposto a aprender e explorar novas tecnologias, especialmente na área de programação. <br> <br> Quando não estou estudando ou programando, gosto de assistir vídeos, jogar, ler e ir a lugares tranquilos!</p>
             </div>
             <div class="redes-sociais-logo">
                 
@@ -50,7 +50,7 @@
                 <a href="https://www.linkedin.com/in/erick-gabriel-127240299/" target="_blank">
                     <img src="images/linkedin/linkedin.svg" alt="Logo do linkedin">
                 </a>
-                <a href="https://www.instagram.com/erick_gabriel_19/" target="_blank">
+                <a href="https://www.instagram.com/erick_gabriel_20/" target="_blank">
                     <img src="images/instagram/instagram.svg" alt="Logo do instagram">
                 </a>
                 <!--<img src="images/github/github_social_media.png" alt="Logo do github"> -->
@@ -117,21 +117,34 @@
         <section>
 
             <div class="conteiner">
+                
                 <form action="https://formsubmit.co/erick.gabriel.professional@gmail.com" method="POST" class="entre-em-contato" id="entre-em-contato">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <fieldset style="padding: 15px; border-radius: 10px; border: 2px solid #000;">
+                        <legend><strong>Entre em contato!</strong></legend>
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." required> <br>
 
-                    <label for="message">Mensagem</label>
-                    <input type="text" name="message" id="email" required>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
-                    <button type="submit">Send</button>
+                        <label for="message">Mensagem</label> <br> 
+                        <!-- <textarea name="message" id="email" required></textarea> -->
+                        <textarea name="message" id="email" placeholder="Digite sua mensagem..." cols="70" rows="10" required></textarea> <br> <br>
+                        <!--<input type="text" name="message" id="email" required>-->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                        <button type="submit">Enviar</button>
+                    </fieldset>
                 </form>
+
             </div>
             <!--Ver como estilizar melhor um formulário (rafaella ballerini)-->
         </section>
 
         <!--Fim do send a message-->
-
     </main>
+    <footer>
+        <!--Início do rodapé-->
+        <div class="rodape">
+            <p>&copy;2025 Erick Gabriel. Todos os Direitos Reservados | <a href="https://github.com/ErickGabriel55/" target="_blank">Github</a> | <a href="https://www.linkedin.com/in/erick-gabriel-127240299/" target="_blank">Linkedin</a> | <a href="https://www.instagram.com/erick_gabriel_20/" target="_blank">Instagram</a></p>
+        </div>
+        <!--Fim do rodapé-->
+    </footer>
 </body>
 </html>
