@@ -9,22 +9,33 @@
 <body>
     <!--Inicio do cabeçalho-->
     <header>
-        <nav>
-            <a href="index.html" class="logo">Erick Gabriel</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Erick Gabriel</h1>
             </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Página inicial</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#Habilidades">Habilidades</a></li>
-                <li><a href="#entre-em-contato">Entre em contato</a></li>
-            </ul>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="" class="nav-link">Página Inicial</a></li>
+                    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#Habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#entre-em-contato" class="nav-link">Contate-me</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="" class="nav-link">Página Inicial</a></li>
+                <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#Habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#entre-em-contato" class="nav-link">Contate-me</a></li>
+            </ul>
+        </div>
     </header>
     <!--Fim do cabeçalho-->
     
@@ -140,6 +151,6 @@
         </div>
         <!--Fim do rodapé-->
     </footer>
-    <script src="js/mobile-navbar.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
