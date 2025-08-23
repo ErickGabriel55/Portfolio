@@ -34,7 +34,6 @@ header{
   display: flex;
   justify-content: space-between;
   padding: 1.5em 6em;
-  
 }
 
 .logo{
@@ -50,16 +49,15 @@ header{
 }
 .nav-list ul{
   display: flex;
-  
   justify-content: center; 
   list-style: none;
+  
 }
 .nav-item{
   margin: 0 15px;
   
 }
 .nav-link{
-  
   position: relative;
   text-decoration: none;
   font-size: 1.15em;
@@ -249,6 +247,7 @@ div.cards{
   justify-content: center;
   align-items: center;
   padding: 32px;
+  gap: 32px;
 }
 
 div.cards div.card{
@@ -259,8 +258,9 @@ div.cards div.card{
   background-color: #FFFFFF;
   padding: 1em 1.5em;
   border-radius: 8px;
-  max-height: 256px;
-  margin-left: 32px;
+  /*max-height: 256px;
+  margin-left: 32px;*/
+  width: 300px;
 }
 
 div.cards div.card:first-child{
@@ -268,29 +268,97 @@ div.cards div.card:first-child{
 }
 
 div.cards div.card div.icon{
-  width: 64px;
-  height: 64px;
+  width: 215px;
+  height: 215px;
+  overflow: hidden;
 }
 
 div.cards div.card div.icon img{
   width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+div.cards div.card h3{
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+div.cards div.card span{
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+  overflow-wrap: break-word;
+  /*text-align: justify;*/
 }
 
 div.cards div.card button{
   padding: 0.5em 1em;
+  margin-bottom: 15px;
+  margin-top: auto;
   text-transform: uppercase;
   border-radius: 32px;
   color: #1D3557;
   background-color: #FFFFFF;
   border: 2px solid #1D3557;
+  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   font-size: 80%;
   font-weight: 700;
 }
 
+div.cards div.card button:hover{
+  padding: 0.625em 1em;
+  border: 0;
+  background-color: #1D3557;
+  color: #FFFFFF;
+
+}
+
 div.cards div.card{
   box-shadow: 20px 20px 50px -30px #001aff;
 }
+
+@media screen and (max-width: 768px){
+  div.cards{
+    flex-direction: column;
+  }
+  div.cards div.card{
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  div.cards div.card:last-child{
+    margin-bottom: 0;
+  }
+  div.cards div.card button{
+    font-size: 90%;
+  }
+  div.cards div.card span{
+    font-size: 100%;
+  }
+
+  div.cards div.card h3{
+    font-size: 117%;
+  }
+}
+
+@media screen and (max-width: 720px){
+  div.cards{
+    flex-direction: column;
+  }
+  div.cards div.card{
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  div.cards div.card:last-child{
+    margin-bottom: 0;
+  }
+  div.cards div.card button{
+    font-size: 70%;
+  }
+}
+
 
 /*Parei no minuto 17:11*/
 /* Fim dos cards */
