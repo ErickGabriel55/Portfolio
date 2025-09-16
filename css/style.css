@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   
   /* Body */
   body {
@@ -132,6 +136,7 @@ section {
 }
 
 section h2 {
+  scroll-margin-top: 108px;
   margin-bottom: 2rem;
   color: #1D3557; /* espaço entre o título e o conteúdo */
 }
@@ -238,12 +243,13 @@ hr {
 /*inicio dos cards/projetos*/
 .projetoh2{
   text-align: center;
-  margin-top: 5.5em;
+  margin-top: 1.5em;
   margin-bottom: 0.9375em;
 }
 
 div.cards{
   display: flex;
+  overflow-x: auto;
   justify-content: center;
   align-items: center;
   padding: 32px;
@@ -322,8 +328,13 @@ div.cards div.card{
 
 @media screen and (max-width: 768px){
   div.cards{
-    flex-direction: column;
+    overflow-x: auto;
   }
+
+  div.cards::-webkit-scrollbar{
+    height: 0;
+  }
+
   div.cards div.card{
     margin-left: 0;
     margin-bottom: 32px;
@@ -345,7 +356,7 @@ div.cards div.card{
 
 @media screen and (max-width: 720px){
   div.cards{
-    flex-direction: column;
+    flex-direction: row;
   }
   div.cards div.card{
     margin-left: 0;

@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
   
 /* Body */
 body {
@@ -15,7 +19,6 @@ body {
     font-size: 16px;
     background-color: #EBEBEB;
     color: #2E2E2E;
-
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
